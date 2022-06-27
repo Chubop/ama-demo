@@ -108,7 +108,6 @@ export default function QuestionCarousel(props){
             {currAnswer}
           </Typography>
         </div>
-          <Button onClick={() => console.log(currAnswer)}>click me</Button>
       </Box>
     </div>
   )
