@@ -155,7 +155,7 @@ export default function Respondent(){
         sx={{width: '100%'}}>
           {Array.from(new Set(topics)).map((elm, index) => {
             return(
-              <Tab label={elm} value={index} onClick={() => {
+              <Tab key={index} label={elm} value={index} onClick={() => {
                 setTabValue(index)
                 handleTabClick(elm)
               }

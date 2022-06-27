@@ -79,7 +79,7 @@ export default function QuestionCarousel(props){
             return(
             <>
               <Typography textAlign={'left'}>
-                "{q['question']}"
+                {q['question']}
               </Typography>
             </>
             )

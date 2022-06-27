@@ -51,8 +51,8 @@ export default function QuestionCard(props){
         showIndicators={false}>
           {Object.keys(props.questions).map((q) => {
             return(
-            <Typography textAlign={'left'}>
-              "{q}"
+            <Typography key={q} textAlign={'left'}>
+              {q}
             </Typography>
             )
           })}
