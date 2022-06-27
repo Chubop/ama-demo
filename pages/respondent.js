@@ -145,7 +145,8 @@ export default function Respondent(){
             <u>2</u> questions are uncategorized.
           </Typography> */}
         </Box>
-
+        
+        <Grid item>
         <Tabs
         allowScrollButtonsMobile
         variant="scrollable"
@@ -163,6 +164,7 @@ export default function Respondent(){
             )
           })}
         </Tabs>
+        </Grid>
 
         <Divider sx={{width: 100, margin: 0}}/>
 
@@ -215,9 +217,6 @@ export default function Respondent(){
             Submit Answer
           </Button>
         </Grid>
-
-        <Button onClick={() => console.log(data)}>click me</Button>
-
 
 
         {/* </Grid> */}
