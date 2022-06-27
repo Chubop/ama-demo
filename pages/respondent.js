@@ -37,7 +37,7 @@ export default function Respondent(){
   .subscribe()
 
   const handleTabClick = (e) => {
-    return
+    setQuestionIdx(0);
   }
 
   function getUnansweredQuestions(){
@@ -146,7 +146,7 @@ export default function Respondent(){
           </Typography> */}
         </Box>
         
-        <Grid item>
+        <Grid item sx={{width: 300}}>
         <Tabs
         allowScrollButtonsMobile
         variant="scrollable"
@@ -203,6 +203,9 @@ export default function Respondent(){
 
         <Grid item>
           <TextField 
+          multiline
+          rows={6}
+          maxRows={6}
           value={localAnswer}
           onChange={handleType}
           placeholder="Answer question" 

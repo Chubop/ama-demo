@@ -38,7 +38,7 @@ export default function AskQuestion(props){
       console.log(currTopic)
       const { data, error } = await supabase
       .from('Topics')
-      .upsert([{ topic: topic.toLowerCase()}])
+      .upsert([{ topic: topic.charAt(0).toUpperCase() + string.slice(1)}])
     }
   }
 
