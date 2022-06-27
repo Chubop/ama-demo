@@ -11,13 +11,20 @@ export default function Home() {
   return (
     <div>
       <NavBar/>
-      <Grid container>
-        <Link href="blakemasters">
-          <Button>Ask Blake Masters</Button>
-        </Link>
-        <Link href="respondent">
-          <Button>Answer Questions</Button>
-        </Link>
+      <Grid container
+      sx={{marginTop: 20}}
+      justifyContent={'center'}
+      direction={'row'}>
+        <Grid item>
+          <Link href="blakemasters">
+            <Button>Ask Blake Masters</Button>
+          </Link>
+        </Grid>
+        <Grid item>
+          <Link href="respondent">
+            <Button>Answer Questions</Button>
+          </Link>
+        </Grid>
       </Grid>
       <BottomNavBar/>
     </div>
